@@ -15,7 +15,7 @@ for domain in "${DOMAINS[@]}"; do
   echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='$domain'),'$domain','ns2.willitping.com','NS',120,NULL);"
   echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='$domain'),'$domain','mail.$domain','MX',120,NULL);"
   echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='$domain'),'$domain','$BALANCER','A',120,NULL);"
-  echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='$domain'),'$domain','www.$domain','CNAME',120,NULL);"
+  #echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='$domain'),'$domain','www.$domain','CNAME',120,NULL);"
   for host in "${HOSTS[@]}"; do
     KEY=${host%%:*}
     VALUE=${host#*:}
