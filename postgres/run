@@ -1,2 +1,0 @@
-docker run -d --name nginx happymoose-nginx /usr/sbin/nginx
-
