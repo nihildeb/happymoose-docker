@@ -4,6 +4,7 @@ DOMAINS=('happymoose.com' 'secropolis.com' 'unixfier.com' 'wickedgrog.com' 'will
 HOSTS=(
 "localhost:127.0.0.1"
 "test:127.0.0.1"
+"*:$BALANCER"
 "www:$BALANCER"
 "mail:$BALANCER"
 "git:$BALANCER"

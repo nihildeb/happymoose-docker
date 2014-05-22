@@ -6,6 +6,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'happymoose.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'localhost.happymoose.com','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'test.happymoose.com','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'*.happymoose.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'www.happymoose.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'mail.happymoose.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'git.happymoose.com','54.83.38.16','A',120,NULL);
@@ -17,6 +18,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='secropolis.com'),'secropolis.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='secropolis.com'),'localhost.secropolis.com','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='secropolis.com'),'test.secropolis.com','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='secropolis.com'),'*.secropolis.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='secropolis.com'),'www.secropolis.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='secropolis.com'),'mail.secropolis.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='secropolis.com'),'git.secropolis.com','54.83.38.16','A',120,NULL);
@@ -28,6 +30,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='unixfier.com'),'unixfier.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='unixfier.com'),'localhost.unixfier.com','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='unixfier.com'),'test.unixfier.com','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='unixfier.com'),'*.unixfier.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='unixfier.com'),'www.unixfier.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='unixfier.com'),'mail.unixfier.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='unixfier.com'),'git.unixfier.com','54.83.38.16','A',120,NULL);
@@ -39,6 +42,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='wickedgrog.com'),'wickedgrog.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='wickedgrog.com'),'localhost.wickedgrog.com','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='wickedgrog.com'),'test.wickedgrog.com','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='wickedgrog.com'),'*.wickedgrog.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='wickedgrog.com'),'www.wickedgrog.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='wickedgrog.com'),'mail.wickedgrog.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='wickedgrog.com'),'git.wickedgrog.com','54.83.38.16','A',120,NULL);
@@ -50,6 +54,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='willitping.com'),'willitping.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='willitping.com'),'localhost.willitping.com','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='willitping.com'),'test.willitping.com','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='willitping.com'),'*.willitping.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='willitping.com'),'www.willitping.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='willitping.com'),'mail.willitping.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='willitping.com'),'git.willitping.com','54.83.38.16','A',120,NULL);
@@ -61,6 +66,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='opensoundengine.com'),'opensoundengine.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='opensoundengine.com'),'localhost.opensoundengine.com','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='opensoundengine.com'),'test.opensoundengine.com','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='opensoundengine.com'),'*.opensoundengine.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='opensoundengine.com'),'www.opensoundengine.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='opensoundengine.com'),'mail.opensoundengine.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='opensoundengine.com'),'git.opensoundengine.com','54.83.38.16','A',120,NULL);
@@ -72,6 +78,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='directfromgermany.com'),'directfromgermany.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='directfromgermany.com'),'localhost.directfromgermany.com','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='directfromgermany.com'),'test.directfromgermany.com','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='directfromgermany.com'),'*.directfromgermany.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='directfromgermany.com'),'www.directfromgermany.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='directfromgermany.com'),'mail.directfromgermany.com','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='directfromgermany.com'),'git.directfromgermany.com','54.83.38.16','A',120,NULL);
@@ -83,6 +90,7 @@ INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'hildebrant.org','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'localhost.hildebrant.org','127.0.0.1','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'test.hildebrant.org','127.0.0.1','A',120,NULL);
+INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'*.hildebrant.org','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'www.hildebrant.org','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'mail.hildebrant.org','54.83.38.16','A',120,NULL);
 INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'git.hildebrant.org','54.83.38.16','A',120,NULL);
