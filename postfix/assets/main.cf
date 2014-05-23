@@ -27,7 +27,7 @@ smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 # See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
 # information on enabling SSL in the smtp client.
 
-smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
+smtpd_relay_restrictions = permit_mynetworks defer_unauth_destination
 myhostname = 95699cec7d3e
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
@@ -38,6 +38,5 @@ mailbox_size_limit = 0
 recipient_delimiter = +
 inet_interfaces = all
 
-smtpd_relay_restrictions = permit_mynetworks, reject_unauth_destination
 virtual_alias_domains = HILDEBRANT.ORG UNIXFIER.COM SECROPOLIS.COM WILLITPING.COM WICKEDGROG.COM HAPPYMOOSE.COM DIRECTFROMGERMANY.COM OPENSOUNDENGINE.COM FLOREMO.COM YARDATA.COM IPSAW.COM OXFAMMODELS.COM
 virtual_alias_maps = hash:/etc/postfix/virtual
