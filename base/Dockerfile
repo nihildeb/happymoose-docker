@@ -10,8 +10,11 @@ RUN ln -fs /bin/true /sbin/initctl
 #
 # Rsyslog and Supervisor
 #
-RUN apt-get update && apt-get -y upgrade && apt-get install -y rsyslog supervisor && apt-get clean
+RUN apt-get update && apt-get -y upgrade && apt-get install -y rsyslog supervisor vim-tiny openssh-server && apt-get clean
 RUN sed -i 's/xconsole/console/g' /etc/rsyslog.d/*
+
+RUN mkdir /var/run/sshd 
+EXPOSE 22
 
 ADD root/ /
 RUN chown root.root /etc/supervisor/conf.d/*.conf
