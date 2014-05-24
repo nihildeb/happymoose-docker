@@ -1,0 +1,42 @@
+http://docs.aws.amazon.com/ses/latest/DeveloperGuide/postfix.html
+
+
+Server Name:  email-smtp.us-east-1.amazonaws.com
+Port:  25, 465 or 587
+Use Transport Layer Security (TLS):  Yes
+Authentication:  Your SMTP credentials - see below.
+
+IAM USER:
+ses-smtp-user.20140523-091424
+SMTP Username:
+AKIAJF2WQUPTXQMTZB7Q
+SMTP Password:
+AqicRfgV3QeYCzXpAw4ZJrpaT0a+5ZzOEU4uKhJQUNpP
+
+Domains:
+UNIXFIER.COM
+SECROPOLIS.COM
+WILLITPING.COM
+WICKEDGROG.COM
+HAPPYMOOSE.COM
+DIRECTFROMGERMANY.COM
+OPENSOUNDENGINE.COM
+FLOREMO.COM
+YARDATA.COM
+IPSAW.COM
+OXFAMMODELS.COM
+
+"Domain verification record set:"
+"Record name","Record type","Record Value"
+"_amazonses.happymoose.com","TXT","OA7DBjxUTHpQIk3cTwKE4WqD95eHYYxMs5aSoO3nlgY="
+
+"Alternate domain verification record:"
+"Record name","Record type","Record Value"
+"amazonses.happymoose.com","TXT","OA7DBjxUTHpQIk3cTwKE4WqD95eHYYxMs5aSoO3nlgY="
+
+"DKIM record set:"
+"Record name","Record type","Record Value"
+"m5a2bvdencl4mtv2atdlkkpr76kysp3r._domainkey.happymoose.com","CNAME","m5a2bvdencl4mtv2atdlkkpr76kysp3r.dkim.amazonses.com"
+"be75y2ewbszhwwgahdivj4j744xo2dhy._domainkey.happymoose.com","CNAME","be75y2ewbszhwwgahdivj4j744xo2dhy.dkim.amazonses.com"
+"vfdy7lwfsa6r3iamug2twldmw4t5k2ly._domainkey.happymoose.com","CNAME","vfdy7lwfsa6r3iamug2twldmw4t5k2ly.dkim.amazonses.com"
+
