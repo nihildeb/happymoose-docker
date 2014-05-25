@@ -2,4 +2,4 @@
 
 # directory where this script is located
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-docker run -i -t -v /mnt/data1:/mnt/data1:rw nihildeb/base $@
+docker run -i -t -p 22 -v /mnt/base:/mnt/base:rw --name base nihildeb/base $@

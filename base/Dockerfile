@@ -13,8 +13,11 @@ RUN ln -fs /bin/true /sbin/initctl
 RUN apt-get update && apt-get -y upgrade && apt-get install -y rsyslog supervisor vim-tiny openssh-server && apt-get clean
 RUN sed -i 's/xconsole/console/g' /etc/rsyslog.d/*
 
-RUN mkdir /var/run/sshd 
-EXPOSE 22
+RUN mkdir /var/run/sshd && mkdir /root/.ssh
+ADD id_rsa.pub /root/.ssh/authorized_keys
+RUN chmod 0700 /root/.ssh && chmod 0400 /root/.ssh/authorized_keys
+
+# EXPOSE 22
 
 ADD root/ /
 RUN chown root.root /etc/supervisor/conf.d/*.conf
