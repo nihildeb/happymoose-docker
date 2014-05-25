@@ -31,3 +31,7 @@ echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select i
 echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'*.hildebrant.org','freezing-light-1632.herokuapp.com','CNAME',120,NULL);"
 echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='hildebrant.org'),'www.hildebrant.org','ghs.google.com','CNAME',120,NULL);"
 
+echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'_amazonses.happymoose.com','OA7DBjxUTHpQIk3cTwKE4WqD95eHYYxMs5aSoO3nlgY=','TXT',120,NULL);"
+echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'m5a2bvdencl4mtv2atdlkkpr76kysp3r._domainkey.happymoose.com','m5a2bvdencl4mtv2atdlkkpr76kysp3r.dkim.amazonses.com','CNAME',120,NULL);"
+echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'be75y2ewbszhwwgahdivj4j744xo2dhy._domainkey.happymoose.com','be75y2ewbszhwwgahdivj4j744xo2dhy.dkim.amazonses.com','CNAME',120,NULL);"
+echo "INSERT INTO records (domain_id,name,content,type,ttl,prio)VALUES((select id from domains where name='happymoose.com'),'vfdy7lwfsa6r3iamug2twldmw4t5k2ly._domainkey.happymoose.com','vfdy7lwfsa6r3iamug2twldmw4t5k2ly.dkim.amazonses.com','CNAME',120,NULL);"
