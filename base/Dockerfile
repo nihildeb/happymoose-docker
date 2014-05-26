@@ -4,8 +4,8 @@ MAINTAINER nick@happymoose.com
 ENV DEBIAN_FRONTEND noninteractive
 
 # Keep upstart from complaining
-RUN dpkg-divert --local --rename --add /sbin/initctl
-RUN ln -fs /bin/true /sbin/initctl
+# RUN dpkg-divert --local --rename --add /sbin/initctl
+# RUN ln -fs /bin/true /sbin/initctl
 
 #
 # Rsyslog and Supervisor
