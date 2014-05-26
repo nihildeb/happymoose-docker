@@ -23,15 +23,10 @@ EXPOSE 22
 
 CMD /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
 
-# before first startup, run 
+# before first startup, run
 # mkdir -p /pg/main
 # chown -R postgres.postgres /pg/main
 # su - postgres
-# /usr/lib/postgresql/bin/initdb -D /pg/main --encoding UTF-8
+# /usr/lib/postgresql/9.4/bin/initdb -D /pg/main --encoding UTF-8
 
-# then start up the database and create superuser acct
-# not like this, use supervisor
-# RUN    /etc/init.d/postgresql start &&\
-# psql --command "CREATE USER nihildeb WITH SUPERUSER PASSWORD 'docker';" &&\
-# createdb -O nihildeb docker
 
