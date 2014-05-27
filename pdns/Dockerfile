@@ -6,11 +6,10 @@ ENV DEBIAN_FRONTEND noninteractive
 # install sqlite pdns
 RUN apt-get update && apt-get install -y pdns-server pdns-backend-pgsql && apt-get clean
 
-EXPOSE 53
+EXPOSE 53/udp
 
-# ADD assets/ /app/
-# RUN sh /app/init.sh
+ADD root/ /
+RUN chown root.root /etc/supervisor/conf.d/*.conf
 
-# CMD pdns_server --config-dir=/app
-
+CMD /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf
 

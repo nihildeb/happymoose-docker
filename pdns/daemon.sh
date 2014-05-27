@@ -1,1 +1,1 @@
-docker run -d --name=pg01 -P -v=/mnt/pg01/main:/pg/main:rw postgres
+docker run -d --name=pdns -P --link pg01:db pdns $@
