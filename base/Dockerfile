@@ -13,6 +13,10 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get -y upgrade && apt-get install -y rsyslog supervisor vim-tiny openssh-server && apt-get clean
 RUN sed -i 's/xconsole/console/g' /etc/rsyslog.d/*
 
+# turn this on next build
+#run apt-get install -q -y language-pack-en
+#run update-locale LANG=en_US.UTF-8
+
 RUN mkdir /var/run/sshd && mkdir /root/.ssh
 ADD id_rsa.pub /root/.ssh/authorized_keys
 RUN chmod 0700 /root/.ssh && chmod 0400 /root/.ssh/authorized_keys
