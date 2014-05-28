@@ -32,7 +32,6 @@ myhostname = 95699cec7d3e
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
 mydestination = 95699cec7d3e, localhost.localdomain, , localhost
-relayhost =
 mynetworks = 0.0.0.0 # 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
 mailbox_size_limit = 0
 recipient_delimiter = +
@@ -40,3 +39,11 @@ inet_interfaces = all
 
 virtual_alias_domains = HILDEBRANT.ORG UNIXFIER.COM SECROPOLIS.COM WILLITPING.COM WICKEDGROG.COM HAPPYMOOSE.COM DIRECTFROMGERMANY.COM OPENSOUNDENGINE.COM FLOREMO.COM YARDATA.COM IPSAW.COM OXFAMMODELS.COM GISIMPLE.COM
 virtual_alias_maps = hash:/etc/postfix/virtual
+
+relayhost = email-smtp.us-east-1.amazonaws.com:25
+smtp_sasl_auth_enable = yes
+smtp_sasl_security_options = noanonymous
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_use_tls = yes
+smtp_tls_security_level = encrypt
+smtp_tls_note_starttls_offer = yes
