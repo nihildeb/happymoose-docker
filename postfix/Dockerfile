@@ -10,14 +10,15 @@ RUN apt-get update && apt-get install -y postfix syslog-ng-core && apt-get clean
 # use setperms with with file corrected from here:
 # https://bugs.launchpad.net/ubuntu/+source/postfix/+bug/274108
 ADD root/ /
-RUN /usr/sbin/postfix set-permissions
+#RUN /usr/sbin/postfix set-permissions
 
-RUN postmap -o /etc/postfix/virtual
+#RUN postmap -o /etc/postfix/virtual
 # ec2 keys
-RUN postmap hash:/etc/postfix/sasl_passwd
-RUN postconf -e 'smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt'
+#RUN postmap hash:/etc/postfix/sasl_passwd
+#RUN postconf -e 'smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt'
+#RUN /etc/resolvconf/update-libc.d/postfix
 
-EXPOSE 25
+#EXPOSE 25
 
-CMD ["sh", "-c", "service syslog-ng start ; /usr/sbin/postfix start ; tail -F /var/log/mail.log"]
+#CMD /start.sh
 
